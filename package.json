@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/array-base-accessor-setter",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Return an accessor function for setting an element in an array-like object supporting the get/set protocol.",
   "license": "Apache-2.0",
   "author": {
