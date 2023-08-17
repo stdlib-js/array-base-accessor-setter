@@ -18,7 +18,7 @@
 
 // TypeScript Version: 2.0
 
-/// <reference types="@stdlib/types"/>
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@esm/index.d.ts"/>
 
 import { ComplexLike } from '@stdlib/types/complex';
 import { Complex64Array, Complex128Array, AccessorArrayLike } from '@stdlib/types/array';
