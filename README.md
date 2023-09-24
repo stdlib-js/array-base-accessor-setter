@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import accessorSetter from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-accessor-setter@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/array-base-accessor-setter/tags). For example,
+
+```javascript
 import accessorSetter from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-accessor-setter@v0.1.0-esm/index.mjs';
 ```
 
@@ -127,7 +132,7 @@ import Complex128 from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float64@es
 import Complex64 from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32@esm/index.mjs';
 import zeroTo from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-zero-to@esm/index.mjs';
 import dtype from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-dtype@esm/index.mjs';
-import accessorSetter from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-accessor-setter@v0.1.0-esm/index.mjs';
+import accessorSetter from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-accessor-setter@esm/index.mjs';
 
 var arr = new Complex128Array( zeroTo( 10 ) );
 accessorSetter( dtype( arr ) )( arr, 2, new Complex128( 100.0, 101.0 ) );
