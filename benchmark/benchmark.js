@@ -20,7 +20,7 @@
 
 // MODULES //
 
-var bench = require( '@stdlib/bench' );
+var bench = require( '@stdlib/bench-harness' );
 var discreteUniform = require( '@stdlib/random-base-discrete-uniform' ).factory;
 var isFunction = require( '@stdlib/assert-is-function' );
 var isnan = require( '@stdlib/math-base-assert-is-nan' );
