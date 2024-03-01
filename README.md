@@ -45,19 +45,32 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/array-base-accessor-setter
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import accessorSetter from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-accessor-setter@esm/index.mjs';
-```
-The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/array-base-accessor-setter/tags). For example,
-
-```javascript
-import accessorSetter from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-accessor-setter@v0.2.1-esm/index.mjs';
+var accessorSetter = require( '@stdlib/array-base-accessor-setter' );
 ```
 
 #### accessorSetter( dtype )
@@ -65,10 +78,10 @@ import accessorSetter from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-acc
 Returns an accessor function for setting an element in an array-like object supporting the get/set protocol.
 
 ```javascript
-import Complex64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-complex64@esm/index.mjs';
-import Complex64 from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32@esm/index.mjs';
-import realf from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-realf@esm/index.mjs';
-import imagf from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-imagf@esm/index.mjs';
+var Complex64Array = require( '@stdlib/array-complex64' );
+var Complex64 = require( '@stdlib/complex-float32' );
+var realf = require( '@stdlib/complex-realf' );
+var imagf = require( '@stdlib/complex-imagf' );
 
 var arr = new Complex64Array( [ 1, 2, 3, 4 ] );
 
@@ -120,19 +133,14 @@ The returned accessor function accepts the following arguments:
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import Complex128Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-complex128@esm/index.mjs';
-import Complex64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-complex64@esm/index.mjs';
-import Complex128 from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float64@esm/index.mjs';
-import Complex64 from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32@esm/index.mjs';
-import zeroTo from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-zero-to@esm/index.mjs';
-import dtype from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-dtype@esm/index.mjs';
-import accessorSetter from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-accessor-setter@esm/index.mjs';
+```javascript
+var Complex128Array = require( '@stdlib/array-complex128' );
+var Complex64Array = require( '@stdlib/array-complex64' );
+var Complex128 = require( '@stdlib/complex-float64' );
+var Complex64 = require( '@stdlib/complex-float32' );
+var zeroTo = require( '@stdlib/array-base-zero-to' );
+var dtype = require( '@stdlib/array-dtype' );
+var accessorSetter = require( '@stdlib/array-base-accessor-setter' );
 
 var arr = new Complex128Array( zeroTo( 10 ) );
 accessorSetter( dtype( arr ) )( arr, 2, new Complex128( 100.0, 101.0 ) );
@@ -151,10 +159,6 @@ v = arr.get( 4 );
 
 console.log( '%s', v.toString() );
 // => '102 + 103i'
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -186,7 +190,7 @@ console.log( '%s', v.toString() );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -216,8 +220,8 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/array-base-accessor-setter.svg
 [npm-url]: https://npmjs.org/package/@stdlib/array-base-accessor-setter
 
-[test-image]: https://github.com/stdlib-js/array-base-accessor-setter/actions/workflows/test.yml/badge.svg?branch=v0.2.1
-[test-url]: https://github.com/stdlib-js/array-base-accessor-setter/actions/workflows/test.yml?query=branch:v0.2.1
+[test-image]: https://github.com/stdlib-js/array-base-accessor-setter/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/array-base-accessor-setter/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/array-base-accessor-setter/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/array-base-accessor-setter?branch=main
@@ -249,7 +253,7 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/array-base-accessor-setter/main/LICENSE
 
-[@stdlib/array/dtypes]: https://github.com/stdlib-js/array-dtypes/tree/esm
+[@stdlib/array/dtypes]: https://github.com/stdlib-js/array-dtypes
 
 </section>
 
