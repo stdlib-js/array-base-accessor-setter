@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import accessorSetter from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-accessor-setter@deno/mod.js';
+import accessorSetter from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-accessor-setter@v0.2.2-deno/mod.js';
 ```
 
 #### accessorSetter( dtype )
@@ -122,7 +122,7 @@ import Complex128 from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float64-ct
 import Complex64 from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32-ctor@deno/mod.js';
 import zeroTo from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-zero-to@deno/mod.js';
 import dtype from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-dtype@deno/mod.js';
-import accessorSetter from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-accessor-setter@deno/mod.js';
+import accessorSetter from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-accessor-setter@v0.2.2-deno/mod.js';
 
 var arr = new Complex128Array( zeroTo( 10 ) );
 accessorSetter( dtype( arr ) )( arr, 2, new Complex128( 100.0, 101.0 ) );
