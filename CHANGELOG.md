@@ -2,9 +2,9 @@
 
 > Package changelog.
 
-<section class="release" id="unreleased">
+<section class="release" id="v0.2.2">
 
-## Unreleased (2024-07-17)
+## 0.2.2 (2024-07-29)
 
 <section class="commits">
 
@@ -44,6 +44,55 @@ A total of 1 person contributed to this release. Thank you to this contributor:
 <section class="release" id="v0.2.1">
 
 ## 0.2.1 (2024-02-25)
+
+No changes reported for this release.
+
+</section>
+
+<!-- /.release -->
+
+<section class="release" id="v0.2.0">
+
+## 0.2.0 (2024-02-14)
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+-   [`bfc60dc`](https://github.com/stdlib-js/stdlib/commit/bfc60dc09e484bea8f284263371337cf5c98961c) - **test:** refactor to use accessor array package _(by Athan Reines)_
+-   [`dea49e0`](https://github.com/stdlib-js/stdlib/commit/dea49e03ab5571233e3da26835a6a6d3256d5737) - **docs:** use single quotes in require calls instead of backticks _(by Philipp Burckhardt)_
+-   [`c5a68f2`](https://github.com/stdlib-js/stdlib/commit/c5a68f2cd116578b2964b05681bd75b33da39607) - **build:** remove tslint directives _(by Philipp Burckhardt)_
+-   [`de93ae0`](https://github.com/stdlib-js/stdlib/commit/de93ae01f1d5e234696e02b9e778d3d71515f5b7) - **build:** remove tslint directives _(by Philipp Burckhardt)_
+-   [`e3fc2d4`](https://github.com/stdlib-js/stdlib/commit/e3fc2d48bf55690a3ead6cc37eed3472f34561c0) - **docs:** update links _(by Athan Reines)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 2 people contributed to this release. Thank you to the following contributors:
+
+-   Athan Reines
+-   Philipp Burckhardt
+
+</section>
+
+<!-- /.contributors -->
+
+</section>
+
+<!-- /.release -->
+
+<section class="release" id="v0.1.0">
+
+## 0.1.0 (2023-09-24)
 
 <section class="features">
 
@@ -85,11 +134,6 @@ A total of 1 person contributed to this release. Thank you to this contributor:
 
 <details>
 
--   [`bfc60dc`](https://github.com/stdlib-js/stdlib/commit/bfc60dc09e484bea8f284263371337cf5c98961c) - **test:** refactor to use accessor array package _(by Athan Reines)_
--   [`dea49e0`](https://github.com/stdlib-js/stdlib/commit/dea49e03ab5571233e3da26835a6a6d3256d5737) - **docs:** use single quotes in require calls instead of backticks _(by Philipp Burckhardt)_
--   [`c5a68f2`](https://github.com/stdlib-js/stdlib/commit/c5a68f2cd116578b2964b05681bd75b33da39607) - **build:** remove tslint directives _(by Philipp Burckhardt)_
--   [`de93ae0`](https://github.com/stdlib-js/stdlib/commit/de93ae01f1d5e234696e02b9e778d3d71515f5b7) - **build:** remove tslint directives _(by Philipp Burckhardt)_
--   [`e3fc2d4`](https://github.com/stdlib-js/stdlib/commit/e3fc2d48bf55690a3ead6cc37eed3472f34561c0) - **docs:** update links _(by Athan Reines)_
 -   [`8354b8c`](https://github.com/stdlib-js/stdlib/commit/8354b8c413754d4d477bc9cba403e3f4299a3fd8) - **fix:** improve type specificity by converting to a generic _(by Athan Reines)_
 -   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - **feat:** update minimum TypeScript version _(by Philipp Burckhardt)_
 -   [`32a2827`](https://github.com/stdlib-js/stdlib/commit/32a282799ffd272d2a0554e81755a14923564e51) - **fix:** update import paths for complex type defs _(by Athan Reines)_
@@ -113,6 +157,16 @@ A total of 2 people contributed to this release. Thank you to the following cont
 </section>
 
 <!-- /.contributors -->
+
+</section>
+
+<!-- /.release -->
+
+<section class="release" id="v0.0.1">
+
+## 0.0.1 (2023-02-02)
+
+No changes reported for this release.
 
 </section>
 
