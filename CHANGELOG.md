@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-06-02)
+## Unreleased (2025-11-30)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`3c1ebd1`](https://github.com/stdlib-js/stdlib/commit/3c1ebd167342711cdb0ed712c9591a8033aa8497) - **docs:** improve doctests for complex number instances in `array/base/accessor-setter` [(#8645)](https://github.com/stdlib-js/stdlib/pull/8645) _(by Divyanshu)_
 -   [`6e9f42e`](https://github.com/stdlib-js/stdlib/commit/6e9f42e4c912485d9896eaa16c88b70fd3688e97) - **docs:** harmonize list formatting in repl.txt and ensure starting newline _(by Philipp Burckhardt)_
 
 </details>
@@ -24,8 +25,9 @@
 
 ### Contributors
 
-A total of 1 person contributed to this release. Thank you to this contributor:
+A total of 2 people contributed to this release. Thank you to the following contributors:
 
+-   Divyanshu
 -   Philipp Burckhardt
 
 </section>
