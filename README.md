@@ -45,14 +45,32 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/array-base-accessor-setter
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import accessorSetter from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-accessor-setter@deno/mod.js';
+var accessorSetter = require( '@stdlib/array-base-accessor-setter' );
 ```
 
 #### accessorSetter( dtype )
@@ -60,10 +78,8 @@ import accessorSetter from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-acc
 Returns an accessor function for setting an element in an array-like object supporting the get/set protocol.
 
 ```javascript
-import Complex64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-complex64@deno/mod.js';
-import Complex64 from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32-ctor@deno/mod.js';
-import realf from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32-real@deno/mod.js';
-import imagf from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32-imag@deno/mod.js';
+var Complex64Array = require( '@stdlib/array-complex64' );
+var Complex64 = require( '@stdlib/complex-float32-ctor' );
 
 var arr = new Complex64Array( [ 1, 2, 3, 4 ] );
 
@@ -71,13 +87,7 @@ var set = accessorSetter( 'complex64' );
 set( arr, 1, new Complex64( 10.0, 11.0 ) );
 
 var v = arr.get( 1 );
-// returns <Complex64>
-
-var re = realf( v );
-// returns 10.0
-
-var im = imagf( v );
-// returns 11.0
+// returns <Complex64>[ 10.0, 11.0 ]
 ```
 
 The returned accessor function accepts the following arguments:
@@ -116,19 +126,19 @@ The returned accessor function accepts the following arguments:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import Complex128Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-complex128@deno/mod.js';
-import Complex64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-complex64@deno/mod.js';
-import Complex128 from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float64-ctor@deno/mod.js';
-import Complex64 from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32-ctor@deno/mod.js';
-import zeroTo from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-zero-to@deno/mod.js';
-import dtype from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-dtype@deno/mod.js';
-import accessorSetter from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-accessor-setter@deno/mod.js';
+var Complex128Array = require( '@stdlib/array-complex128' );
+var Complex64Array = require( '@stdlib/array-complex64' );
+var Complex128 = require( '@stdlib/complex-float64-ctor' );
+var Complex64 = require( '@stdlib/complex-float32-ctor' );
+var zeroTo = require( '@stdlib/array-base-zero-to' );
+var dtype = require( '@stdlib/array-dtype' );
+var accessorSetter = require( '@stdlib/array-base-accessor-setter' );
 
 var arr = new Complex128Array( zeroTo( 10 ) );
 accessorSetter( dtype( arr ) )( arr, 2, new Complex128( 100.0, 101.0 ) );
 
 var v = arr.get( 2 );
-// returns <Complex128>
+// returns <Complex128>[ 100.0, 101.0 ]
 
 console.log( '%s', v.toString() );
 // => '100 + 101i'
@@ -137,7 +147,7 @@ arr = new Complex64Array( zeroTo( 10 ) );
 accessorSetter( dtype( arr ) )( arr, 4, new Complex64( 102.0, 103.0 ) );
 
 v = arr.get( 4 );
-// returns <Complex64>
+// returns <Complex64>[ 102.0, 103.0 ]
 
 console.log( '%s', v.toString() );
 // => '102 + 103i'
@@ -172,7 +182,7 @@ console.log( '%s', v.toString() );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -235,7 +245,7 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/array-base-accessor-setter/main/LICENSE
 
-[@stdlib/array/dtypes]: https://github.com/stdlib-js/array-dtypes/tree/deno
+[@stdlib/array/dtypes]: https://github.com/stdlib-js/array-dtypes
 
 </section>
 
