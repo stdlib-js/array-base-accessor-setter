@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`dc36299`](https://github.com/stdlib-js/stdlib/commit/dc36299e2dbbda5ab1482e5777334567529e5459) - **bench:** refactor to use string interpolation in `array/base/accessor-setter` [(#8662)](https://github.com/stdlib-js/stdlib/pull/8662) _(by Rohit R Bhat)_
 -   [`d745259`](https://github.com/stdlib-js/stdlib/commit/d745259e39acdcc3f80b3b569185491daef92145) - **docs:** add missing spaces and update parameter type _(by Philipp Burckhardt)_
 -   [`3c1ebd1`](https://github.com/stdlib-js/stdlib/commit/3c1ebd167342711cdb0ed712c9591a8033aa8497) - **docs:** improve doctests for complex number instances in `array/base/accessor-setter` [(#8645)](https://github.com/stdlib-js/stdlib/pull/8645) _(by Divyanshu)_
 -   [`6e9f42e`](https://github.com/stdlib-js/stdlib/commit/6e9f42e4c912485d9896eaa16c88b70fd3688e97) - **docs:** harmonize list formatting in repl.txt and ensure starting newline _(by Philipp Burckhardt)_
@@ -26,10 +27,11 @@
 
 ### Contributors
 
-A total of 2 people contributed to this release. Thank you to the following contributors:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
 -   Divyanshu
 -   Philipp Burckhardt
+-   Rohit R Bhat
 
 </section>
 
