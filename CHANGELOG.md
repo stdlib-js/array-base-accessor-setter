@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-11-30)
+## Unreleased (2025-12-01)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`d745259`](https://github.com/stdlib-js/stdlib/commit/d745259e39acdcc3f80b3b569185491daef92145) - **docs:** add missing spaces and update parameter type _(by Philipp Burckhardt)_
 -   [`3c1ebd1`](https://github.com/stdlib-js/stdlib/commit/3c1ebd167342711cdb0ed712c9591a8033aa8497) - **docs:** improve doctests for complex number instances in `array/base/accessor-setter` [(#8645)](https://github.com/stdlib-js/stdlib/pull/8645) _(by Divyanshu)_
 -   [`6e9f42e`](https://github.com/stdlib-js/stdlib/commit/6e9f42e4c912485d9896eaa16c88b70fd3688e97) - **docs:** harmonize list formatting in repl.txt and ensure starting newline _(by Philipp Burckhardt)_
 
